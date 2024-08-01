@@ -35,3 +35,28 @@
 .read-the-docs {
   color: #888;
 }
+
+.Profil {
+  z-index: 2;
+  background-color: rgba(0, 42, 63, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  width: 40%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  right: 0;
+}
+
+.photoProfil {
+  z-index: 2;
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
