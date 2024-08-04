@@ -1,32 +1,11 @@
 
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.menu {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
@@ -36,20 +15,32 @@
   color: #888;
 }
 
-.Profil {
+section {
   z-index: 2;
   background-color: rgba(0, 42, 63, 0.15);
   backdrop-filter: blur(5px);
+  margin: 20px;
   padding: 20px;
-  width: 40%;
   box-sizing: border-box;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.Profil {
+  width: 40%;
   margin-left: auto;
   right: 0;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .photoProfil {
@@ -59,4 +50,97 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.contactIcons{
+  z-index: 2;
+  margin-top: 20px;
+  width: 50%;
+  line-height: 25px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.logo{
+  z-index: 2;
+  font-size: x-large;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-square-envelope {
+  color: rgba(255, 162, 0, 0.847);
+}
+
+.fa-linkedin {
+  color: rgba(0, 204, 255, 0.847);
+}
+
+.fa-square-instagram {
+  color: rgba(255, 0, 115, 0.847);
+}
+
+.fa-square-github {
+  color: rgba(255, 230, 0, 0.763);
+}
+
+.line {
+  z-index: 2;
+  position: absolute;
+  width: 100em;
+  height: 1px;
+  top: 10px;
+  background: rgba(255, 255, 255, 0);
+  overflow: hidden;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #00a2ffa3 100%);
+  -webkit-animation: drop 7s 0s infinite;
+          animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1) {
+  margin-right: 0;
+}
+.line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.line:nth-child(3) {
+  margin-left: 0;
+}
+.line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
