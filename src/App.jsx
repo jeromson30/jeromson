@@ -1,9 +1,9 @@
 import { useState } from 'react'
+import Header from './components/Header'
 import photoProfil from './assets/profil.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareEnvelope, faJ } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareInstagram, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
-
 import './App.css'
 
 
@@ -12,17 +12,7 @@ function App() {
 
   return (
     <>
-      <header>
-      <div className="lines">
-        <div className="line"></div>
-      </div>
-      <div className='logo'><FontAwesomeIcon icon={faJ} /></div>
-       <nav className="menu">
-          <a>Accueil</a>
-          <a>Compétences</a>
-          <a>Projets</a>
-       </nav>
-      </header>
+      <Header />
       <main>
       <div></div>
       <div className='Profil'>
@@ -45,21 +35,6 @@ function App() {
 
       </footer>
 
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
-      <div class="firefly"></div>
       <div class="firefly"></div>
       <div class="firefly"></div>
       <div class="firefly"></div>
